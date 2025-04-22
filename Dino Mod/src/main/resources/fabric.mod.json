@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "prehistoric-restoration",
+	"version": "${version}",
+	"name": "Prehistoric Restoration",
+	"description": "Uncover ancient records of long-gone creatures, and restore them back to life!",
+	"authors": [
+		"Big Lee Big Davis"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/prehistoric-restoration/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.blbd.prehistoricrestoration.PrehistoricRestoration"
+		],
+		"fabric-datagen": [
+			"com.blbd.prehistoricrestoration.PrehistoricRestorationDataGenerator"
+		],
+		"client":[
+			"com.blbd.prehistoricrestoration.PrehistoricRestorationClient"
+		]
+	},
+	"mixins": [
+		"prehistoric-restoration.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
